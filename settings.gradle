@@ -10,17 +10,6 @@ pluginManagement {
             name = 'ParchmentMC'
             url = 'https://maven.parchmentmc.org/'
         }
-
-        maven {
-            url "https://cursemaven.com"
-        }
-
-        maven {
-            url "https://maven.terraformersmc.com/releases"
-        }
-        maven {
-            url "https://maven.curseforge.com"
-        }
     }
 }
 

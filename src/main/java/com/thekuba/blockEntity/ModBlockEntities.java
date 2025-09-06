@@ -10,9 +10,10 @@ import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.eventbus.api.IEventBus;
 
 public class ModBlockEntities {
-    // Create a registry specifically for BlockEntities
+
     public static final DeferredRegister<BlockEntityType<?>> MOD_BLOCK_ENTITIES =
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, GravelPlacers.MOD_ID);
+    //the fabled DeferredRegister for registering this mod's block entities deferredly
 
 
     public static final RegistryObject<BlockEntityType<LootableBrushableBlockEntity>> LOOTABLE_BRUSHABLE =
@@ -26,6 +27,9 @@ public class ModBlockEntities {
                             ),
                             ModBlocks.GRAVEL_PLACER.get()
                     ).build(null));
+    //i still have no fucking idea why a lambda function is a parameter to a registryObject
+
+
                     //the only real difference between a normal BrushableBlockEntity and this Lootable one is that
                     //this thingy holds a loottable, which is normally given to the entity via NBT
                     //that was a no-go because of what i'm trying to do here, so yeah
@@ -35,3 +39,4 @@ public class ModBlockEntities {
         MOD_BLOCK_ENTITIES.register(eventBus);
     }
 }
+

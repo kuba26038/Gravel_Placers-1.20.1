@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "vermeil:gravel_placer"
+    "gravel_placers:gravel_placer"
   ]
 }

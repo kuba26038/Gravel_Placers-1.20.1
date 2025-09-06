@@ -14,12 +14,19 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_ELECTRUM_NUGGET = MOD_ITEMS.register("raw_electrum_nugget",
             () -> new Item(new Item.Properties()));
 
-    //to break this down let's write the next one like this:
     public static final RegistryObject<Item> RAW_PLATINUM_NUGGET =
             MOD_ITEMS.register(
                     "raw_platinum_nugget",
                     () -> new Item(new Item.Properties())
             );
+
+
+
+
+
+
+
+
     //as i can see, it is a variable. right?? unless methods can also be public static final
     //what the hell is RegistryObject????
     // ok i think it's a. a class?? because methods and variables are the same thing?

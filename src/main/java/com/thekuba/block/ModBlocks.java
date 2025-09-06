@@ -48,7 +48,7 @@ public class ModBlocks {
                             .pushReaction(PushReaction.NORMAL),
                     SoundEvents.BRUSH_GRAVEL,
                     SoundEvents.BRUSH_GRAVEL_COMPLETED,
-                    "vermeil:archeology/gravel_placer" // <- loot table path
+                    "gravel_placers:archeology/gravel_placer" // <- loot table path
             )); //the lootablebrushableblock is the exact same as the brushableblock, but holds a loottable
                 //it doesn't do anything by itself and needs other classes for help
                 //the fact that this block uses a loottable is defined much sooner, but the path is defined only here

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "vermeil:block/gravel_placer_1"
+    "all": "gravel_placers:block/gravel_placer_3"
   }
 }

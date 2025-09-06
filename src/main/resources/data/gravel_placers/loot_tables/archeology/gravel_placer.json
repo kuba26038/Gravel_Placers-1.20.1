@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "gravel_placers:raw_electrum_nugget" },
+        { "type": "minecraft:item", "name": "gravel_placers:raw_platinum_nugget" },
+
+        { "type": "minecraft:item", "name": "spelunkery:raw_copper_nugget" },
+        { "type": "minecraft:item", "name": "spelunkery:raw_copper_nugget" },
+        { "type": "minecraft:item", "name": "spelunkery:raw_copper_nugget" },
+        { "type": "minecraft:item", "name": "spelunkery:raw_copper_nugget" },
+        { "type": "minecraft:item", "name": "spelunkery:raw_gold_nugget" },
+        { "type": "minecraft:item", "name": "spelunkery:raw_gold_nugget" },
+
+
+        { "type": "minecraft:item", "name": "minecraft:flint" },
+        { "type": "minecraft:item", "name": "spelunkery:raw_silver_nugget" },
+        { "type": "minecraft:item", "name": "spelunkery:raw_silver_nugget" },
+
+        { "type": "minecraft:item", "name": "minecraft:air" },
+        { "type": "minecraft:item", "name": "minecraft:air" },
+        { "type": "minecraft:item", "name": "minecraft:air" },
+        { "type": "minecraft:item", "name": "minecraft:air" },
+        { "type": "minecraft:item", "name": "minecraft:air" }
+      ]
+    }
+  ]
+}
