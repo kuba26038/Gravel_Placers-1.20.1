@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "gravel_placer:raw_electrum_nugget"
+  },
+  "result": "oreganized:electrum_nugget",
+  "experience": 1,
+  "cookingtime": 12
+}

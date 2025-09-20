@@ -12,20 +12,15 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, GravelPlacers.MOD_ID);
 
     public static final RegistryObject<Item> RAW_ELECTRUM_NUGGET = MOD_ITEMS.register("raw_electrum_nugget",
-            () -> new Item(new Item.Properties()));
+            () -> new LongEatingItem( // so it's TAKING TOO LONG
+                    new Item.Properties().food(ModFoods.RAW_ELECTRUM_NUGGET)) // make it be edible. cronch cronch monch bzzt
+    );
 
     public static final RegistryObject<Item> RAW_PLATINUM_NUGGET =
             MOD_ITEMS.register(
                     "raw_platinum_nugget",
                     () -> new Item(new Item.Properties())
             );
-
-
-
-
-
-
-
 
     //as i can see, it is a variable. right?? unless methods can also be public static final
     //what the hell is RegistryObject????
@@ -35,6 +30,7 @@ public class ModItems {
     //are objects variables???
 
     public static void registerBus(IEventBus eventBus) {
+
         MOD_ITEMS.register(eventBus);
     }
 

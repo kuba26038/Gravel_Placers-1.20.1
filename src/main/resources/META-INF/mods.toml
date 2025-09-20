@@ -39,7 +39,7 @@ authors="TheKuba" #optional
 #displayTest="MATCH_VERSION" # MATCH_VERSION is the default if nothing is specified (#optional)
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''yeah'''
+description='''Find small, but exciting treasures in rivers'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.gravel_placers]] #optional
 # the modid of the dependency

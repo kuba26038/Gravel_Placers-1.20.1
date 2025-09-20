@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features", 
+  "biomes": "#minecraft:is_river", 
+  "features": "gravel_placers:gravel_placer_river", 
+  "step": "underground_ores"
+}

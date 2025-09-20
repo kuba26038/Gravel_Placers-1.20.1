@@ -1,6 +1,12 @@
 {
+  "creativetab.placer_tab": "Gravel Placers",
+
   "item.gravel_placers.raw_electrum_nugget": "Raw Electrum Nugget",
   "item.gravel_placers.raw_platinum_nugget": "Raw Platinum Nugget",
   "block.gravel_placers.gravel_placer": "Gravel Placer",
-  "creativetab.placer_tab": "Gravel Placers"
+  "advancements.story.place_gravel_placer.title": "Gravel Placer Placer",
+  "advancements.story.place_gravel_placer.description": "Place a Gravel Placer someplace nice",
+  "tooltip.gravel_placers.raw_electrum_nugget": "Looks kind of tasty",
+  "tooltip.gravel_placers.gravel_placer": "Appears in rivers",
+  "death.attack.teeth_grind": "%1$s ground their teeth to dust"
 }

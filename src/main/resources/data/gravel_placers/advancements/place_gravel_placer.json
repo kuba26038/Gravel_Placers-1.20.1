@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:story/enchant_item",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "gravel_placers:gravel_placer"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.story.place_gravel_placer.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "gravel_placers:gravel_placer"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.story.place_gravel_placer.title"
+    }
+  },
+  "sends_telemetry_event": true
+}
