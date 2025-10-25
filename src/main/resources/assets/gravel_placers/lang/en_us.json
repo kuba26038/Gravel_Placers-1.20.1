@@ -8,5 +8,6 @@
   "advancements.story.place_gravel_placer.description": "Place a Gravel Placer someplace nice",
   "tooltip.gravel_placers.raw_electrum_nugget": "Looks kind of tasty",
   "tooltip.gravel_placers.gravel_placer": "Appears in rivers",
-  "death.attack.teeth_grind": "%1$s ground their teeth to dust"
+  "death.attack.teeth_grind": "%1$s ground their teeth to dust",
+  "tooltip.gravel_placers.raw_platinum_nugget": "universal repair material, usable in anvils"
 }

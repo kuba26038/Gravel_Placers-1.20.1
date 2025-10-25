@@ -1,7 +1,7 @@
-package com.thekuba.forgeHooks;
+package com.thekuba.gravel_placers.forgeHooks;
 
 
-import com.thekuba.item.ModItems;
+import com.thekuba.gravel_placers.item.ModItems;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.AnvilUpdateEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

@@ -1,8 +1,8 @@
-package com.thekuba.block;
+package com.thekuba.gravel_placers.block;
 
-import com.thekuba.blockEntity.LootableBrushableBlock;
+import com.thekuba.gravel_placers.blockEntity.LootableBrushableBlock;
 import com.thekuba.gravel_placers.GravelPlacers;
-import com.thekuba.item.ModItems;
+import com.thekuba.gravel_placers.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -50,11 +50,11 @@ public class ModBlocks {
                     SoundEvents.BRUSH_GRAVEL_COMPLETED,
                     "gravel_placers:archeology/gravel_placer" // <- loot table path
             )); //the lootablebrushableblock is the exact same as the brushableblock, but holds a loottable
-                //it doesn't do anything by itself and needs other classes for help
-                //the fact that this block uses a loottable is defined much sooner, but the path is defined only here
-                //i guess it could be like... hardcoded even harder? into the definition of the block entity even?
-                //but that would be kinda pointless, wouldn't it be...
-                //TODO remember that this loottable needs to be non-silkable if it's in a state that's anything else than untouched
+    //it doesn't do anything by itself and needs other classes for help
+    //the fact that this block uses a loottable is defined much sooner, but the path is defined only here
+    //i guess it could be like... hardcoded even harder? into the definition of the block entity even?
+    //but that would be kinda pointless, wouldn't it be...
+    //TODO remember that this loottable needs to be non-silkable if it's in a state that's anything else than untouched
 
 
     //i still struggle to figure out what's going on here but this was even earlier. god damn is this hard to wrap my head around

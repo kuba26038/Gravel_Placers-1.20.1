@@ -1,4 +1,4 @@
-package com.thekuba.item;
+package com.thekuba.gravel_placers.item;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;

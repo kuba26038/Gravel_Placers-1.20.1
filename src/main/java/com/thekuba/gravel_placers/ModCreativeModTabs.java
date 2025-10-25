@@ -1,7 +1,7 @@
 package com.thekuba.gravel_placers;
 
-import com.thekuba.block.ModBlocks;
-import com.thekuba.item.ModItems;
+import com.thekuba.gravel_placers.block.ModBlocks;
+import com.thekuba.gravel_placers.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

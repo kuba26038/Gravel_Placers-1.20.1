@@ -1,4 +1,4 @@
-package com.thekuba.item;
+package com.thekuba.gravel_placers.item;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

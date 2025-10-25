@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "gravel_placer:raw_electrum_nugget"
+    "item": "gravel_placers:raw_electrum_nugget"
   },
   "result": "oreganized:electrum_nugget",
   "experience": 1,

@@ -1,6 +1,5 @@
-package com.thekuba.damageStuff;
+package com.thekuba.gravel_placers;
 
-import com.thekuba.gravel_placers.GravelPlacers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
@@ -9,9 +8,6 @@ import net.minecraft.world.damagesource.DamageScaling;
 import net.minecraft.world.damagesource.DamageType;
 
 public class GravelPlacerDamageTypes {
-
-
-
     public static final ResourceKey<DamageType> TEETH_GRIND = ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation(GravelPlacers.MOD_ID,"teeth_grind"));
 
     public static void bootstrap(BootstapContext<DamageType> ctx) {

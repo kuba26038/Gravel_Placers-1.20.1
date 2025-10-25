@@ -1,7 +1,7 @@
-package com.thekuba.blockEntity;
+package com.thekuba.gravel_placers.blockEntity;
 
 
-import com.thekuba.block.ModBlocks;
+import com.thekuba.gravel_placers.block.ModBlocks;
 import com.thekuba.gravel_placers.GravelPlacers;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.registries.DeferredRegister;
@@ -13,18 +13,11 @@ public class ModBlockEntities {
 
     public static final DeferredRegister<BlockEntityType<?>> MOD_BLOCK_ENTITIES =
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, GravelPlacers.MOD_ID);
-    //the fabled DeferredRegister for registering this mod's block entities deferredly
-
 
     public static final RegistryObject<BlockEntityType<LootableBrushableBlockEntity>> LOOTABLE_BRUSHABLE =
             MOD_BLOCK_ENTITIES.register("lootable_brushable",
                     () -> BlockEntityType.Builder.of(
-                            // Factory function that creates your block entity
-                            (pos, state) -> new LootableBrushableBlockEntity(
-                                    pos,
-                                    state,
-                                    "vermeil:blocks/gravel_placer"
-                            ),
+                            LootableBrushableBlockEntity::new,
                             ModBlocks.GRAVEL_PLACER.get()
                     ).build(null));
     //i still have no fucking idea why a lambda function is a parameter to a registryObject

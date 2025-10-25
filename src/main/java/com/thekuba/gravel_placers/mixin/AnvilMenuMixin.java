@@ -1,7 +1,7 @@
-package com.thekuba.mixin;
+package com.thekuba.gravel_placers.mixin;
 
 
-import com.thekuba.item.ModItems;
+import com.thekuba.gravel_placers.item.ModItems;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AnvilMenu;

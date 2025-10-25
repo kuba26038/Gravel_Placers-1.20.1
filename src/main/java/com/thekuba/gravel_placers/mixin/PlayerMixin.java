@@ -1,7 +1,7 @@
-package com.thekuba.mixin;
+package com.thekuba.gravel_placers.mixin;
 
-import com.thekuba.damageStuff.GravelPlacerDamageTypes;
-import com.thekuba.item.ModItems;
+import com.thekuba.gravel_placers.GravelPlacerDamageTypes;
+import com.thekuba.gravel_placers.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.EntityType;
@@ -23,13 +23,13 @@ public abstract class PlayerMixin extends LivingEntity{
     }
 
     @Unique
-    LivingEntity vermeil_1_20_1$PlayerSelf = (Player) (Object) this;
+    LivingEntity gravel_1_20_1$PlayerSelf = this;
 
     @Unique
-    protected final RandomSource vermeil_1_20_1$RNG = RandomSource.create();
+    protected final RandomSource gravel_1_20_1$RNG = RandomSource.create();
 
     @Unique
-    private static int vermeil_1_20_1$WaitForTicks = 0;
+    private static int gravel_1_20_1$WaitForTicks = 0;
 
 
 
@@ -38,19 +38,19 @@ public abstract class PlayerMixin extends LivingEntity{
 
         if(this.useItem.is(ModItems.RAW_ELECTRUM_NUGGET.get()) && this.useItem.getUseAnimation() == UseAnim.EAT) {
 
-                if(vermeil_1_20_1$WaitForTicks < 20) {
-                    vermeil_1_20_1$WaitForTicks++; //SCUFFED AAA
+                if(gravel_1_20_1$WaitForTicks < 20) {
+                    gravel_1_20_1$WaitForTicks++; //SCUFFED AAA
                     return;
                 }
                 
-                    playSound(SoundEvents.GRINDSTONE_USE,
-                            0.3F + 0.3F * (float) vermeil_1_20_1$RNG.nextInt(2),
-                            (vermeil_1_20_1$RNG.nextFloat() - vermeil_1_20_1$RNG.nextFloat()) * 0.2F + 1.0F);
+                    playSound(SoundEvents.GRINDSTONE_USE, // you know what really grinds my gears?
+                            0.3F + 0.3F * (float) gravel_1_20_1$RNG.nextInt(2),
+                            (gravel_1_20_1$RNG.nextFloat() - gravel_1_20_1$RNG.nextFloat()) * 0.2F + 1.0F);
 
                     //TODO create a shorter and more snappy version of the grinding SFXes (SoundEffectsies)
 
-                    vermeil_1_20_1$PlayerSelf.hurt(vermeil_1_20_1$PlayerSelf.damageSources().source(GravelPlacerDamageTypes.TEETH_GRIND), 1.0f); //harm.
+                    gravel_1_20_1$PlayerSelf.hurt(gravel_1_20_1$PlayerSelf.damageSources().source(GravelPlacerDamageTypes.TEETH_GRIND), 1.0f); //harm.
 
-        } else vermeil_1_20_1$WaitForTicks = 0;
+        } else gravel_1_20_1$WaitForTicks = 0;
     }
 }

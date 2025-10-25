@@ -1,10 +1,11 @@
 plugins {
-    //id 'eclipse'
+    id 'eclipse'
     id 'idea'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
     id 'org.spongepowered.mixin' version '0.7.+'
+  ///  id 'com.modrinth.minotaur' version '2.+'
 }
 
 version = mod_version
@@ -81,6 +82,17 @@ repositories {
         name = "Modrinth"
         url = "https://api.modrinth.com/maven"
     }
+
+    maven { url "https://maven.minecraftforge.net" }
+    maven {
+        url = "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+
+
+
 }
 
 dependencies {
@@ -91,10 +103,23 @@ dependencies {
     // Apply Mixin AP
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
-    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.5.0"))
+    implementation "maven.modrinth:oreganized:4.2.5"
+    implementation "maven.modrinth:spelunkery:1.20.1-0.3.16-forge"
+
+    //implementation     fg.deobf("curse.maven:jei-238222:6600311")
+    //implementation     fg.deobf("curse.maven:jei-integration-265917:4999754")
+    //implementation     fg.deobf("curse.maven:emi-580555:6420945")
+    //implementation     fg.deobf("curse.maven:selene-499980:6740431")
+    //implementation     fg.deobf("curse.maven:spelunkery-790530:6122072")
+
+    //implementation fg.deobf("curse.maven:embeddium-908741:5681725")
+    //implementation fg.deobf("curse.maven:magnesium-extras-558905:6041697")
+    //implementation fg.deobf("curse.maven:yeetusexperimentus-635427:4680832")
+
+   /* compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.5.0"))
     implementation(jarJar("io.github.llamalad7:mixinextras-forge:0.5.0")) {
         jarJar.ranged(it, "[0.5.0,)")
-    }
+    }*/
 
 }
 mixin {
@@ -165,3 +190,5 @@ publishing {
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
+
+

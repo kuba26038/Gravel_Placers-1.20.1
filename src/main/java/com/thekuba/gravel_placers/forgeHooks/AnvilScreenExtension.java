@@ -1,6 +1,6 @@
-package com.thekuba.forgeHooks;
+package com.thekuba.gravel_placers.forgeHooks;
 
-import com.thekuba.item.ModItems;
+import com.thekuba.gravel_placers.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
